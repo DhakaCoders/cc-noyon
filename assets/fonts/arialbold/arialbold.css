@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'arialbold';
+    src: url('arialbold/arialbold.eot');
+    src: url('arialbold/arialbold.eot') format('embedded-opentype'),
+         url('arialbold/arialbold.woff2') format('woff2'),
+         url('arialbold/arialbold.woff') format('woff'),
+         url('arialbold/arialbold.ttf') format('truetype'),
+         url('arialbold/arialbold.svg#arialbold') format('svg');
+}

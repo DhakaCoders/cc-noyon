@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('YuGothic-Regular.eot');
+    src: url('YuGothic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('YuGothic-Regular.woff2') format('woff2'),
+        url('YuGothic-Regular.woff') format('woff'),
+        url('YuGothic-Regular.ttf') format('truetype'),
+        url('YuGothic-Regular.svg#YuGothic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
