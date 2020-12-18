@@ -2,7 +2,7 @@
 	position: relative;
 	z-index: 2;
 	background: #0e0e0e;
-	padding: 37px 0;
+/*	padding: 37px 0;*/
 }
 .header-inr{
 	display: flex;
@@ -43,6 +43,7 @@ nav.main-nav ul li a{
 nav.main-nav > ul{
 	display: flex;
 	align-items: center;
+	padding-top: 76px;
 }
 nav.main-nav > ul > li{
 	position: relative;
@@ -62,6 +63,7 @@ nav.main-nav > ul > li > a{
 	text-transform: uppercase;
 	color: #A0A0A0;
 	padding-bottom: 76px;
+	display: inline-block;
 }
 nav.main-nav > ul > li > a:hover{
 	color: #3B9ABB;

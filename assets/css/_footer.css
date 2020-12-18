@@ -151,8 +151,13 @@
 .input-fields-col-inr{
 	padding: 2px;
 	background: #fff;
+	position: relative;
+
 }
-.input-fields-col input{
+.ftr-top-news-form-cntlr .input-fields-row .input-fields-col .input-fields-col-inr .form-control {
+	border-radius: 0;
+}
+.input-fields-col .input-fields-col-inr input{
 	width: 100%;
 	outline: 0;
 	border: 1px solid transparent;
@@ -160,25 +165,54 @@
 	background: #fff;
 	font-size: 12px;
 	color: #141414;
-	/*border: 1px solid #D9534F;*/
 }
-/*.input-fields-col input:focus{
-	border-color: #141414;
-}*/
+.ftr-top-news-form-cntlr form.was-validated .input-fields-row .input-fields-col .input-fields-col-inr:after{
+	position: absolute;
+	content: "";
+	background-image: url('../images/x-icon.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 6px;
+	height: 6px;
+	right: 19px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
 
-.input-fields-col input::placeholder {
+.ftr-top-news-form-cntlr .input-fields-row .input-fields-col .input-fields-col-inr.form-control input:focus{
+	border-color: transparent;
+}
+.input-fields-col .input-fields-col-inr input::placeholder {
   color: #141414;
   opacity: 1;
 }
 
-.input-fields-col input:-ms-input-placeholder {
+.input-fields-col .input-fields-col-inr input:-ms-input-placeholder {
  color: #141414;
  opacity: 1;
 }
 
-.input-fields-col input::-ms-input-placeholder {
+.input-fields-col .input-fields-col-inr input::-ms-input-placeholder {
  color: #141414;
  opacity: 1;
+}
+
+
+.ftr-top-news-form-cntlr form.was-validated .input-fields-row .input-fields-col .input-fields-col-inr input::placeholder {
+  color: #D9534F;
+ 
+}
+
+.ftr-top-news-form-cntlr form.was-validated .input-fields-row .input-fields-col .input-fields-col-inr input:-ms-input-placeholder {
+ color: #D9534F;
+}
+
+.ftr-top-news-form-cntlr form.was-validated .input-fields-row .input-fields-col .input-fields-col-inr input::-ms-input-placeholder {
+ color: #D9534F;
 }
 
 .ftr-top-news-form-desc{
@@ -198,7 +232,7 @@
 	color: #3B9ABB;
 }
 
-.ftr-top-news-form-btn input[type="submit"]{
+.ftr-top-news-form-btn button{
 	width: 273px;
 	height: 48px;
 	border: 2px solid #3B9ABB;
@@ -213,10 +247,15 @@
 	padding-top: 3px;
 	cursor: pointer;
 }
-.ftr-top-news-form-btn input[type="submit"]:hover{
+.ftr-top-news-form-btn button:hover{
 	background: transparent;
 	color: #A0A0A0;
 	border-color: #A0A0A0;
+}
+
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .input-fields-row .input-fields-col .input-fields-col-inr input {
+    border-color: #D9534F;
+    /*border-width: 1px;*/
 }
 
 

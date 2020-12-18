@@ -48,7 +48,7 @@
               <nav class="main-nav">
                 <ul class="clearfix reset-list">
                   <li class="current-menu-item"><a href="#">Home</a></li>
-                  <li class="menu-item-has-children">
+                  <li class="menu-item-has-children clearfix">
                     <a href="#">Services</a>
                     <ul class="sub-menu reset-list">
                       <li><a href="#">Services 1</a></li>
@@ -85,17 +85,39 @@
   </div>
 </header>
 
-<section class="main-content">
+<section class="section">
+  <div class="section-inr clearfix">
+    <div class="cc-video-fencybox-cntlr left">
+      <div class="cc-video-fencybox-img inline-bg" style="background-image: url(assets/images/cc-video-fencybox-img.jpg);"></div>
+      <a class="overlay-link" data-fancybox="gallery" href="https://www.youtube.com/watch?v=jG8PY8-qCII"></a>
+      <div class="cc-video-play-cntlr">
+        <a href="#"><i class="fas fa-play"></i></a>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="right-inr">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
   <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-
-        </div>
-        <div class="col-md-6">
-
+    <div class="row">
+      <div class="col-md-12">
+        <div class="services-inr">
+          <div class="cc-entry-hdr hm-cc-entry-hdr">
+            <strong>services</strong>
+            <div class="cc-entry-hdding">
+              <h2 class="cc-entry-title">services</h2>
+            </div>
+          </div>
         </div>
       </div>
-  </div>    
+    </div>
+  </div>
 </section>
 
 
@@ -160,32 +182,32 @@
             <div class="ftr-top-news-form-cntlr ftr-top-col">
               <h6 class="ftr-top-col-title">Nieuwsbrief</h6>
               <div class="ftr-top-news-form">
-                <form action="">
+                <form action="" class="needs-validation" novalidate>
                   <div class="input-fields-row">
                     <div class="input-fields-col">
-                      <div class="input-fields-col-inr">
-                        <input type="text" placeholder="info2conversal.be">
+                      <div class="input-fields-col-inr from-group">
+                        <input type="text" placeholder="info2conversal.be" class="form-control" required>
                       </div>
                     </div>
                   </div>
                   <div class="input-fields-row">
                     <div class="input-fields-col">
-                      <div class="input-fields-col-inr">
-                        <input type="text" placeholder="Bedrijf">
+                      <div class="input-fields-col-inr from-group">
+                        <input type="text" placeholder="Bedrijf" class="form-control" required>
                       </div>
                     </div>
                   </div>
                   <div class="input-fields-row">
                     <div class="input-fields-col">
-                      <div class="input-fields-col-inr">
-                        <input type="text" placeholder="Voornaam*">
+                      <div class="input-fields-col-inr from-group">
+                        <input type="text" placeholder="Voornaam*" class="form-control" required>
                       </div>
                     </div>
                   </div>
                   <div class="input-fields-row">
                     <div class="input-fields-col">
-                      <div class="input-fields-col-inr">
-                        <input type="text" placeholder="Naam*">
+                      <div class="input-fields-col-inr from-group">
+                        <input type="text" placeholder="Naam*" class="form-control" required>
                       </div>
                     </div>
                   </div>
@@ -193,7 +215,7 @@
                     <p>Wij respecteren uw <a href="#">privacy</a>. Jouw gegevens worden altijd vertrouwelijk behandeld.</p>
                   </div>
                   <div class="ftr-top-news-form-btn">
-                    <input type="submit" value="Inschrijven">
+                    <button type="submit" class="submit" name="submit">Inschrijven</button>
                   </div>
                 </form>
               </div>
