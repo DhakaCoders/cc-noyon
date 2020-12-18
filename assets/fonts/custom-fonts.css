@@ -52,3 +52,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'ArialNova';
+    src: url('ArialNova/ArialNova.eot');
+    src: url('ArialNova/ArialNova.eot?#iefix') format('embedded-opentype'),
+        url('ArialNova/ArialNova.woff2') format('woff2'),
+        url('ArialNova/ArialNova.woff') format('woff'),
+        url('ArialNova/ArialNova.ttf') format('truetype'),
+        url('ArialNova/ArialNova.svg#ArialNova') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
