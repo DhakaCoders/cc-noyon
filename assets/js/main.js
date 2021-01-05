@@ -119,6 +119,7 @@ if( $('.responsive-slider').length ){
 
 
 
+
 if( $('#mapID').length ){
 var latitude = $('#mapID').data('latitude');
 var longitude = $('#mapID').data('longitude');
@@ -169,6 +170,88 @@ google.maps.event.addDomListener(window, 'load', initialize);
     });
   }, false);
 })();
+
+
+
+
+
+
+  /**
+  custom Slick slider
+  */
+  /*$(function(){
+    setInterval(function(){
+      var displayed = $(".img-header.displayed");
+    }, 4000);
+  });*/
+
+
+  /*$(this).toggleClass('ftr-menu-rotet-icon');
+  $(this).parent().siblings().find('h5').removeClass('ftr-menu-rotet-icon');
+  $(this).parent().find('ul').slideToggle(300);
+  $(this).parent().siblings().find('ul').slideUp(300);*/
+
+
+   /* setInterval(swapImages(),100);
+
+    function swapImages(){
+
+      var active = $('.active-item'); 
+      var next = ($('.active-item').next());
+
+      
+      active.removeClass('active-item');
+      next.addClass('active-item');
+    }*/
+    
+    setInterval(() => {
+      var active = $('.active-item'); 
+      var next = ($('.active-item').next());
+
+      
+      active.removeClass('active-item');
+      next.addClass('active-item');
+
+
+    }, 3000);
+
+
+
+
+
+   /* var numItems = $('.hm-banner-slide-wrap').length;
+    var lnumItems = $('.hm-banner-slide-wrap-lst');
+    if (numItems == 3) {
+      $('.hm-banner-slide-wrap-fst').hide('.hm-banner-slide-wrap');
+    }*/
+
+    /*var lnumItems = $('.hm-banner-slide-wrap-lst');
+    if ('.hm-banner-slide-wrap-lst .active-item') {
+      setInterval(() => {
+
+        active.removeClass('active-item');
+        $('.hm-banner-slide-wrap-fst').addClass('active-item');
+        active.removeClass('active-item');
+        next.addClass('active-item');
+      }, 3000);
+      return true;
+    }*/
+   
+
+    if( $('.ftsSlider').length ){
+      $('.ftsSlider').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        speed: 300,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        
+      });
+    }
+
 
     new WOW().init();
 

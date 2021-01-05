@@ -1,8 +1,10 @@
 .header{
-	position: relative;
-	z-index: 2;
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
 	background: #0e0e0e;
-/*	padding: 37px 0;*/
 }
 .header-inr{
 	display: flex;
