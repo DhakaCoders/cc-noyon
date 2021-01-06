@@ -490,10 +490,15 @@
 	position: relative;
 
 }
-.cc-right-img{
+.cc-right-img-cntlr{
 	width: 50%;
 	float: left;
 	background: #f9f9f9;
+	height: 660px;
+}
+.cc-right-img{
+	height: 100%;
+	width: 100%;
 }
 .cc-left-desc:after{
 	position: absolute;
@@ -575,8 +580,8 @@
 
 .cc-block-sec{
 	background: #F9F9F9;
-	margin-top: -58px;
-	padding-top: 58px;
+	margin-top: -65px;
+	padding-top: 65px;
 }
 .cc-block-inr{
 	padding-top: 130px;

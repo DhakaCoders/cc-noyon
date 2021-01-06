@@ -256,6 +256,30 @@ google.maps.event.addDomListener(window, 'load', initialize);
       }, 3000);
       return true;
     }*/
+
+
+    if (windowWidth <= 1920) {
+      $('.xs-hdr-hmbrgr-close-cntlr').on('click', function(e){
+        $('.xs-mobile-menu').addClass('opacity-1');
+        $('.bdoverlay').addClass('active');
+        $('body').addClass('active-scroll-off');
+        $(this).next().addClass('close-icon');
+      });
+      $('.hmbrgr-icon').on('click', function(e){
+        $('.bdoverlay').removeClass('active');
+        $('.xs-mobile-menu').removeClass('opacity-1');
+        $('body').removeClass('active-scroll-off');
+        $(this).next().removeClass('close-icon');
+      });
+
+      $('li.menu-item-has-children > a').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('sub-menu-active');
+        $(this).parent().toggleClass('sub-menu-arrow');
+        $(this).next().slideToggle(300);
+
+      });
+    }
    
 
     if( $('.ftsSlider').length ){
