@@ -248,9 +248,9 @@
 	cursor: pointer;
 }
 .ftr-top-news-form-btn button:hover{
-	background: transparent;
-	color: #A0A0A0;
-	border-color: #A0A0A0;
+	background: #fff;
+	color: #3B9ABB;
+	border-color: #fff;
 }
 
 .custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .input-fields-row .input-fields-col .input-fields-col-inr input {

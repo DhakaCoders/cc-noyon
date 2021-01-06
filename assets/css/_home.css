@@ -1,7 +1,8 @@
 .hm-banner{
 	position: relative;
-	padding-top: 240px;
-	margin-bottom: 131px;
+	padding-top: 234px;
+	
+	background: #F9F9F9;
 }
 .hm-banner:after{
 	display: block;
@@ -21,6 +22,7 @@
 	padding-left: 20px;
 	position: relative;
 	z-index: 3;
+	
 }
 .hm-banner-slider{
 	position: relative;
@@ -32,9 +34,10 @@
 }
 .hm-banner-slider-lbdr{
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	/*top: 0;
+	bottom: 0;*/
 	left: 0;
+	bottom: 0;
 	content: "";
 	background: #3b99bb;
 	height: 100%;
@@ -42,14 +45,29 @@
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
-	animation-name: hmbslbrr;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
+	
 	/*animation-delay: 1s;*/
 }
+.hm-banner-slider-lbdr.activeLine{
+	animation-name: hmbslbrr;
+	-webkit-animation-name: hmbslbrr;
+	-o-animation-name: hmbslbrr;
+	-ms-animation-name: hmbslbrr;
+	animation-duration: 8s;
+	-webkit-animation-duration: 8s;
+	-o-animation-duration: 8s;
+	-ms-animation-duration: 8s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	animation-direction: forwards;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
 @keyframes hmbslbrr {
-  0%   {height: 0%}
-  100% {height: 100%}
+  from {height: 100%}
+  to {height: 0%}
 }
 .hm-banner-slide-wrap{
 	width: 33.33%;
@@ -98,7 +116,6 @@
 	bottom: 0;
 	left: 107px;
 	width: 715px;
-	background: #fff;
 	z-index: 5;
 	opacity: 0;
 	transition: all 0.5s;
@@ -121,46 +138,28 @@
 	opacity: 1;
 }
 
-
-/*.hmbsi-lg-title{
-	font-weight: 900;
-	font-size: 48px;
-	line-height: 1;
-	text-transform: uppercase;
-	color: #3B9ABB;
-}
-.hmbsi-md-title{
-	font-weight: 900;
-	font-size: 32px;
-	line-height: 1.1;
-	text-transform: uppercase;
-	color: #FFFFFF;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section{
+.cc-vdo-sec{
 	padding-bottom: 33px;
 	background: #f9f9f9;
+	padding-top: 131px;
 }
-.left{
+.cc-vdo-sec-inr{
+
+}
+.cc-vdo-sec-lft-cntlr{
 	width: 50%;
 	float: left;
+	position: relative;
+}
+.cc-vdo-sec-lft-cntlr:after{
+	position: absolute;
+	content: "";
+	background: #3B9ABB;
+	width: 86px;
+	height: 86px;
+	top: 34px;
+	right: -86px;
+	z-index: 5;
 }
 .cc-video-fencybox-cntlr{
 	position: relative;
@@ -199,25 +198,17 @@
 	color: #fff;
 	font-size: 37px;
 }
-.right{
+.cc-vdo-sec-right-cntlr{
 	width: 50%;
 	float: left;
 	background: #fff;
 	position: relative;
-	margin-top: 70px;
+	margin-top: 50px;
+	padding-top: 70px;
 	
 	
 }
-.right:after{
-	position: absolute;
-	content: "";
-	background: #3B9ABB;
-	width: 86px;
-	height: 86px;
-	top: -86px;
-	left: 0;
-}
-.right-inr{
+.cc-vdo-sec-right-desc-cntlr{
 	background: #0F0E0F;
 	height: 500px;
 	padding: 60px 120px;
@@ -225,7 +216,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.right-text-cntlr{
+.cc-vdo-sec-right-desc{
 	max-width: 680px;
 	width: 100%;
 	margin-left: auto;
@@ -297,6 +288,21 @@
 }
 .services-tag-cntrr ul > li{
 	padding: 0 15px;
+}
+.services-tag-cntrr ul > li span.src-tag-big-title a{
+	display: inline-block;
+	color: #3B9ABB
+}
+.services-tag-cntrr ul > li span.src-tag-medium-title a{
+	display: inline-block;
+	color: #B1C1C7
+}
+.services-tag-cntrr ul > li span.src-tag-small-title a{
+	display: inline-block;
+	color: #B1C1C7
+}
+.services-tag-cntrr ul > li span a:hover{
+/*	color: initial;*/
 }
 .src-tag-big-title{
 	font-family: 'arialblack';
@@ -452,6 +458,9 @@
 
 	color: #3B9ABB;
 }
+.cases-item-desc ul li span a{
+	color: #3B9ABB;
+}
 .cases-item-desc > p{
 	color: #141414;
 	margin-bottom: 40px;
@@ -479,8 +488,12 @@
 	margin-top: 50px;
 	padding-top: 70px;
 	position: relative;
-	
 
+}
+.cc-right-img{
+	width: 50%;
+	float: left;
+	background: #f9f9f9;
 }
 .cc-left-desc:after{
 	position: absolute;
@@ -562,13 +575,15 @@
 
 .cc-block-sec{
 	background: #F9F9F9;
+	margin-top: -58px;
+	padding-top: 58px;
 }
 .cc-block-inr{
 	padding-top: 130px;
 	padding-bottom: 150px;
 }
-.hm-cc-block-entry-hdr{
-
+.hm-cc-block-entry-hdr .cc-entry-hdr-strong-gray{
+	color: #fff!important;
 }
 .hm-cc-block-entry-hdr .cc-entry-hdr-strong-gray{
 	left: -20px!important;
@@ -598,9 +613,18 @@
 	position: relative;
 	margin-bottom: 32px;
 }
+.cc-block-item:hover .cc-block-img{
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
 .cc-block-img{
 	width: 100%;
 	height: 100%;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .cc-block-img-blog-type{
 	position: absolute;

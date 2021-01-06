@@ -1,10 +1,11 @@
 .header{
 	position: absolute;
-	z-index: 3;
+	z-index: 5;
 	top: 0;
 	left: 0;
 	right: 0;
 	background: #0e0e0e;
+	padding: 39px 0;
 }
 .header-inr{
 	display: flex;
@@ -45,7 +46,7 @@ nav.main-nav ul li a{
 nav.main-nav > ul{
 	display: flex;
 	align-items: center;
-	padding-top: 76px;
+	padding-top: 10px;
 }
 nav.main-nav > ul > li{
 	position: relative;
@@ -64,7 +65,7 @@ nav.main-nav > ul > li > a{
 	line-height: 1;
 	text-transform: uppercase;
 	color: #A0A0A0;
-	padding-bottom: 76px;
+	padding-bottom: 10px;
 	display: inline-block;
 }
 nav.main-nav > ul > li > a:hover{
@@ -85,7 +86,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
 	top: 100%;
     background: #fff;
     border-top: 2px solid #3B9ABB;
-    z-index: 3;
+    z-index: 99;
     width: 175px;
     padding: 15px 10px 10px 0;
 	transform: scale3d(1,0,1);
@@ -226,7 +227,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
     z-index: 21;
 
 }
-.fl-lang ul li a:hover,{
+.fl-lang ul li a:hover{
 	color: #3B9ABB;
 }
 .fl-lang-cntlr ul{
@@ -238,7 +239,6 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
 	padding: 10px 15px 5px 0;	
 }
 .fl-lang-cntlr:hover ul{
-	background-color: rgb(255,255,255);
 	text-align: left;
 }
 .fl-lang-cntlr:hover{

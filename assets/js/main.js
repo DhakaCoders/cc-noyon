@@ -204,7 +204,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       next.addClass('active-item');
     }*/
     
-    setInterval(() => {
+    /*setInterval(() => {
       var active = $('.active-item'); 
       var next = ($('.active-item').next());
 
@@ -213,7 +213,27 @@ google.maps.event.addDomListener(window, 'load', initialize);
       next.addClass('active-item');
 
 
-    }, 3000);
+    }, 3000);*/
+
+    var divs = $('.hmBannerSlider').children('div');
+    var  anim = $('.hm-banner-slider-lbdr');
+    var  number = divs.length;
+    var  currentIndex = 0;
+    var  intervalLength = 8000;
+
+    function setTimer() {
+      divs.removeClass('active-item');
+      anim.removeClass('activeLine');
+      divs.eq(currentIndex).addClass('active-item');
+      anim.addClass('activeLine');
+      currentIndex++;
+      if (currentIndex == number) {
+      currentIndex = 0;
+      }
+    }
+
+    setTimer();
+    var timer = setInterval(setTimer, intervalLength);
 
 
 
