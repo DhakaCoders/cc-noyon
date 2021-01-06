@@ -36,6 +36,9 @@
 .ftr-logo{
 	margin-bottom: 18px;
 }
+.ftr-logo a{
+	display: inline-block;
+}
 .ftr-top-lft-socials{
 
 }
