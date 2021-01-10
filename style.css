@@ -12,3 +12,14 @@ Text Domain: clipfresh
 */
 
 @import url('assets/css/main.css');
+
+.hm-banner,
+.cc-vdo-sec,
+.services,
+.cases,
+.cc-left-desc-right-img,
+.cc-block-sec,
+.footer-top-sec,
+.footer-wrp{
+	overflow: hidden;
+}

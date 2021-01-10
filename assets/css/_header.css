@@ -286,11 +286,12 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
 }
 /*xm hdr*/
 .xs-header{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 999;
+	z-index: 999991;
+	background: #0e0e0e;
 }
 .xs-header-cntlr{
 	display: flex;
@@ -343,23 +344,6 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
 .hmbrgr-icon span:nth-child(3){
 	top: 18px;
 }
-.close-icon span:nth-child(1){
-	top: 9px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-}
-.close-icon span:nth-child(2){
-	top: 9px;
-	transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-}
-.close-icon span:nth-child(3){
-	display: none;
-}
 
 
 /*xs-mobile header*/
@@ -377,7 +361,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
 	opacity: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 99999;
+	z-index: -1;
 	background: #fff;
 	height: 100%;
 	width: 100%;
@@ -386,8 +370,9 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
-.xs-mobile-menu.opacity-1{
+.xs-mbl-cntlr .xs-mobile-menu{
 	opacity: 1;
+	z-index: 99999;
 }
 .bdoverlay {
     background: rgba(0, 0, 0, 0.8);
@@ -402,10 +387,10 @@ nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu{
     transition: all 0.3s;
     z-index: -1;
 }
-body.active-scroll-off {
+body.xs-mbl-cntlr {
     overflow: hidden!important;
 }
-.bdoverlay.active {
+.xs-mbl-cntlr .bdoverlay {
     z-index: 9999;
     opacity: 1;
 }
@@ -417,7 +402,7 @@ body.active-scroll-off {
 .xs-mobile-menu-cntlr:after{
 	position: absolute;
 	content: "";
-	bottom: 0;
+	bottom: -4px;
 	left: 0;
 	height: 4px;
 	width: 48px;

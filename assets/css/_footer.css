@@ -68,6 +68,9 @@
 .ftr-top-col{
 	float: left;
 }
+.ftr-top-col:not(:last-child){
+	padding-right: 10px;
+}
 .ftr-top-col-title{
 	font-family: 'arialbold';
 	font-size: 14px;
@@ -340,4 +343,134 @@
 .ftr-btm-design-by a:hover,
 .ftr-btm-menu ul li a:hover{
 	color: #3B9ABB;
+}
+
+/*xs footer*/
+.xs-mobile-ftr-top{
+	background: #3B9ABB;
+	width: 100%;
+	height: 100%;
+	padding: 47px 24px;
+	margin-bottom: 4px;
+}
+.xs-mobile-ftr-top:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.xs-mobile-ftr-btm > div:not(.ftr-top-lft-socials){
+	text-align: center;
+	background: #111011;
+}
+.xs-mobile-ftr-btm:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+/*res[ponsive*/
+@media(max-width: 1199px){
+
+}
+
+@media(max-width: 991px){
+	.ftr-top-news-form-cntlr{
+		max-width: 100%;
+	}
+	.ftr-logo{
+		display: block!important;
+	}
+	.ftr-top-navi{
+		max-width: 100%;
+		float: initial;
+		padding-bottom: 73px;
+	}
+	.ftr-top-news-form-cntlr p{
+		color: #fff;
+	}
+	.ftr-logo{
+		margin-bottom: 0;
+		padding-top: 74px;
+		padding-bottom: 20px;
+	}
+	.xs-mobile-ftr-btm .ftr-top-lft-socials{
+		background: #fff;
+		padding: 27px 0;
+		position: relative;
+
+	}
+	.xs-mobile-ftr-btm .ftr-top-lft-socials:after{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		content: "";
+		background: #EEEEEE;
+		height: 1px;
+	}
+	.xs-mobile-ftr-btm .ftr-top-lft-socials ul{
+		justify-content: center;
+	}
+	.xs-mobile-ftr-btm .ftr-top-lft-socials ul li a{
+		color: #111011;
+	}
+	.ftr-btm-copyright{
+		display: none;
+	}
+	.ftr-btm{
+		flex-wrap: wrap;
+		padding: 27px 0 34px 0;
+	}
+	.ftr-btm-menu{
+		width: 100%;
+		margin: initial;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.ftr-btm-menu ul{
+		justify-content: center;
+	}
+	.ftr-btm-design-by{
+		width: 100%;
+		text-align: center;
+		margin-left: initial;
+	}
+	.input-fields-col .input-fields-col-inr input{
+
+		height: 44px;
+	}
+	.ftr-top-news-form-btn button{
+		border-color: #111011;
+		background: #111011;
+	}
+	.xs-mobile-ftr-top{
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+@media(max-width: 767px){
+	.xs-mobile-ftr-cntlr{
+		margin: 0 -20px;
+	}
+	.xs-mobile-ftr-btm .ftr-top-lft-socials:after{
+		position: absolute;
+		bottom: 0;
+		left: 20px;
+		right: 20px;
+		content: "";
+		background: #EEEEEE;
+		height: 1px;
+	}
+}
+
+
+
+
+@media(max-width: 479px){
+	.ftr-btm-menu ul li{
+		padding: 0 14px;
+	}
 }
